@@ -16,10 +16,10 @@ Make sure bwoken is <a href="#installation">properly installed</a>. Then, build 
 <pre><code># will build and run all of your tests
 $ bwoken test
 
-# will run one file, relative to integration/coffeescript/{iphone,ipad}/
-#  (note: no file extension)
-$ bwoken test --focus some_test # runs this test on (iphone and ipad) OR (connected iDevice)
-$ bwoken test --focus some_test --family iphone
+# will run one file, relative to integration/coffeescript/{iphone,ipad}/ (don't include the .js suffix)
+
+$ bwoken test --focus relative_path_without_js_suffix # runs this test on (iphone and ipad) OR (connected iDevice)
+$ bwoken test --focus relative_path_without_js_suffix --family iphone
 </code></pre>
 
 ### structuring your test files
